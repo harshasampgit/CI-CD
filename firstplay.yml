@@ -1,0 +1,9 @@
+---
+
+- name: playbook
+  hosts: test-server
+  tasks:
+    - name: copy jar file
+      copy:
+        src: /root/git/project1/target/sparkjava-hello-world-1.0.war
+        dest: /root/jarfile
